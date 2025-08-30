@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo",
+    "sans-serif";
+  background-color: #fff;
+  width: 100%;
+  color: #2b2a27;
+}
+
+.recipe {
+  display: flex;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.recipe img {
+  height: 700px;
+  width: 50%;
+  object-fit: cover;
+}
+
+.section-title {
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 40px;
+}
+
+.section-title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.recipe-detail h2 {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.ingredients {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.ingredients tr {
+  border-bottom: 1px dotted #ccc;
+}
+
+.ingredients td {
+  padding: 6px 0;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.ingredients td:first-child {
+  text-align: left;
+}
+
+.ingredients td:last-child {
+  text-align: right;
+  white-space: nowrap; /* 数字が折り返さないように */
+}
+
+.how-to-make {
+    margin-top: 40px;
+}
+
+.steps {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  list-style-position: inside;
+}
+
+.steps li {
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
+  font-size: 16px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.detail-button {
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px;
+  padding: 18px 60px 18px 60px;
+  margin-top: 60px;
+}
+
+.sns-links {
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+.instagram {
+    border-bottom: 1px solid #2b2a27;
+}
+
+.twitter {
+    border-bottom: 1px solid #2b2a27;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.facebook {
+    border-bottom: 1px solid #2b2a27;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 834px) {
+    .recipe {
+        display: block;
+        min-width: 100%;
+    }
+
+    .recipe img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+       width: 100%;
+    }
+} 
